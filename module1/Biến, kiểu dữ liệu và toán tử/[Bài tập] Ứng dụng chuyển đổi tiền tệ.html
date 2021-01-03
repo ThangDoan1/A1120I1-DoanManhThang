@@ -12,19 +12,23 @@
     <th><h3>To Currency</h3></th>
   </tr>
   <tr>
-    <th><input  type="number" name="number"</th>
-    <th><select name ="1"><option>Việt Nam</option></select></th>
-    <th><select><option>USD</option></select></th>
+    <th><input id="amount" type="number" name="amount"></th>
+    <th><select id="vietnam"><option>Việt Nam</option></select></th>
+    <th><select id="american"><option>USD</option></select></th>
   </tr>
   <tr>
-    <th> <button onclick="myFunction()">Convert</button> </th>
+    <th> <input type="submit" value="Convert" style="background: blue" onclick="move()"></th>
   </tr>
 </table>
+<p id="change"></p>
 <script>
-  function myFunction() {
-    let number1 = 23.000;
-    let number;
-    onclick=((1/number1) * parseFloat(number.value));
+  function move() {
+    let a, b, c, doi;
+    a = parseInt(document.getElementById("amount").value);
+    b = parseInt(document.getElementById("vietnam").value);
+    c = parseInt(document.getElementById("american").value);
+    doi=a*(1/23000);
+    document.getElementById("change").innerText ="Result:" +doi +"$";
   }
 </script>
 </body>

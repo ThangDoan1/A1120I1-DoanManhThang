@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Viết chương trình đếm số nguyên âm trong một chuỗi</title>
+</head>
+<body>
+<script>
+    let arr=[];
+    let  list=parseInt(prompt('Nhap so phan tu trong mang'));
+    let number=0;
+    for (let i=0;i<list;i++){
+        arr[i]=parseInt(prompt('Nhap gia tri phan tu trong mang'));
+        if (arr[i]<0){
+            number++;
+        }
+    }
+    alert("Có" +number + "số nguyên âm");
+</script>
+</body>
+</html>

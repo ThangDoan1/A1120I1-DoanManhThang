@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+        let num=100;
+            for (let i = 1; i <= num; i++) {
+                // kiểm tra xem có là bội số của cả 3 và 5
+                if (i % 3 === 0 && i % 5 === 0) {
+                    console.log("fizzbuzz");
+                } // có phải là bội số của 3
+                else if (i % 3 === 0) {
+                    console.log("fizz");
+                } // có phải là bội số của 5
+                else if (i % 5 === 0) {
+                    console.log("buzz");
+                } else {
+                    console.log(i);
+                }
+
+         }
+</script>
+</body>
+</html>
