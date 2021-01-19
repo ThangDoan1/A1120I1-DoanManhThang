@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f1a5b64-f8f6-4b5f-8172-813d67e1cd19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tổng quan JavaScript/Bài tập 1 Nhúng JavaScript.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tổng quan JavaScript/Bài tập 3 Nhúng JS.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tổng quan JavaScript/Hiển thị kết quả sử dụng hàm alert.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tổng quan JavaScript/Hiển thị kết quả sử dụng hàm console.log.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tổng quan JavaScript/Hiển thị kết quả sử dụng hàm document.write.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tổng quan JavaScript/Hiển thị kết quả sử dụng thẻ HTML.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tổng quan JavaScript/baitap3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case Study/Module1_AccountName.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case Study/Module1_AccountName.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cấu trúc lặp 2/nhap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hàm 1+2/Bài tập/Bài 1.Luyện tập tạo và sử dụng hàm 01.html" beforeDir="false" afterPath="$PROJECT_DIR$/Hàm 1+2/Bài tập/Bài 1.Luyện tập tạo và sử dụng hàm 01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hàm 1+2/Chuyển đổi giữa feet và meters.html" beforeDir="false" afterPath="$PROJECT_DIR$/Hàm 1+2/Chuyển đổi giữa feet và meters.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hàm 1+2/Hàm kiểm tra số nguyên tố.html" beforeDir="false" afterPath="$PROJECT_DIR$/Hàm 1+2/Hàm kiểm tra số nguyên tố.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lập trình hướng đối tượng 1+2/Bài tập/Adam và Eva.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lập trình hướng đối tượng 1+2/Bài tập/Adam và Eva.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lập trình hướng đối tượng 1+2/Bài tập/Công tắc và bóng đèn.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lập trình hướng đối tượng 1+2/Bài tập/Công tắc và bóng đèn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lập trình hướng đối tượng 1/Bài tập/Xây dựng lớp mô tả Temperature.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lập trình hướng đối tượng 1/Bài tập/Xây dựng lớp mô tả hình chữ nhật.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lập trình hướng đối tượng 1/Thực hành/Funny circles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lập trình hướng đối tượng 1/Thực hành/Xây dựng lớp Date.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lập trình hướng đối tượng 1/Thực hành/Xây dựng lớp Hình tròn.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -41,8 +46,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Tổng quan JavaScript/Bài tập 2 Nhúng JS.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -51,6 +57,20 @@
       <recent name="D:\A1120I1_DoanManhThang\module1\Git &amp; Html\new project" />
       <recent name="D:\A1120I1_DoanManhThang\module1\Git &amp; Html" />
     </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.Module1_AccountName.html">
+    <configuration name="Công tắc và bóng đèn.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/module1/Lập trình hướng đối tượng 1+2/Bài tập/Công tắc và bóng đèn.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Module1_AccountName.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:58301/module1/Case Study/Module1_AccountName.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Module1_AccountName.html" />
+        <item itemvalue="JavaScript Debug.Công tắc và bóng đèn.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -72,6 +92,14 @@
       <workItem from="1607182112359" duration="2378000" />
       <workItem from="1607324855937" duration="5474000" />
       <workItem from="1607343184135" duration="3726000" />
+      <workItem from="1610103984777" duration="5628000" />
+      <workItem from="1610264009433" duration="6731000" />
+      <workItem from="1610535906881" duration="10603000" />
+      <workItem from="1610547095889" duration="513000" />
+      <workItem from="1610716213499" duration="2150000" />
+      <workItem from="1610981332398" duration="1144000" />
+      <workItem from="1610983292872" duration="1928000" />
+      <workItem from="1611040579515" duration="2270000" />
     </task>
     <servers />
   </component>
@@ -79,9 +107,85 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1607346924145">
+    <state x="275" y="26" key="#Inspections" timestamp="1610370589579">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607346924145" />
+    <state x="275" y="26" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1610370589579" />
+    <state x="430" y="224" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1610105376959">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="430" y="224" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1610105376959" />
+    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1610369035160">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1610369035160" />
+    <state width="1345" height="222" key="GridCell.Tab.0.bottom" timestamp="1610547026919">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="222" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610547026919" />
+    <state width="1345" height="222" key="GridCell.Tab.0.center" timestamp="1610547026918">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="222" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1610547026918" />
+    <state width="1345" height="222" key="GridCell.Tab.0.left" timestamp="1610547026918">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="222" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1610547026918" />
+    <state width="1345" height="222" key="GridCell.Tab.0.right" timestamp="1610547026919">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="222" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1610547026919" />
+    <state width="1345" height="222" key="GridCell.Tab.1.bottom" timestamp="1610547026919">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="222" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610547026919" />
+    <state width="1345" height="222" key="GridCell.Tab.1.center" timestamp="1610547026919">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="222" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1610547026919" />
+    <state width="1345" height="222" key="GridCell.Tab.1.left" timestamp="1610547026919">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="222" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1610547026919" />
+    <state width="1345" height="222" key="GridCell.Tab.1.right" timestamp="1610547026919">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="222" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1610547026919" />
+    <state width="1345" height="222" key="GridCell.Tab.2.bottom" timestamp="1610547026920">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="222" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610547026920" />
+    <state width="1345" height="222" key="GridCell.Tab.2.center" timestamp="1610547026919">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="222" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1610547026919" />
+    <state width="1345" height="222" key="GridCell.Tab.2.left" timestamp="1610547026919">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="222" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1610547026919" />
+    <state width="1345" height="222" key="GridCell.Tab.2.right" timestamp="1610547026920">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="222" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1610547026920" />
+    <state width="1345" height="222" key="GridCell.Tab.3.bottom" timestamp="1610547026920">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="222" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610547026920" />
+    <state width="1345" height="222" key="GridCell.Tab.3.center" timestamp="1610547026920">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="222" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1610547026920" />
+    <state width="1345" height="222" key="GridCell.Tab.3.left" timestamp="1610547026920">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="222" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1610547026920" />
+    <state width="1345" height="222" key="GridCell.Tab.3.right" timestamp="1610547026920">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="222" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1610547026920" />
+    <state x="346" y="49" key="search.everywhere.popup" timestamp="1610546538824">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1610546538824" />
   </component>
 </project>

@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type = "number" id ="so">
+<input  type="submit" onclick="isPrime()" value="Kiểm Tra">
+<script>
+function isPrime(){
+    let number =document.getElementById("so").value;
+    let snt = true;
+    if(number<2){
+        snt=false;
+        alert(number + "không phải là số nguyên tố" );
+    }else{
+        for(let i = 2;i<number-1;i++){
+            if(number%i == 0){
+                snt =false;
+                alert(number + "không phải là số nguyên tố" );
+            }
+        }
+    }
+if(snt ==true){
+    alert(number + "là số nguyên tố");
+}else{
+    alert(number + "không phải là số nguyên tố" )
+}
+}
+
+</script>
 </body>
 </html>

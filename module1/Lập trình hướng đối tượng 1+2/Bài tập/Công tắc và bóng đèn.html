@@ -2,9 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Công tắc và bóng đèn</title>
 </head>
 <body>
-$END$
+<h3>Bật tắt bóng đèn </h3>
+<img src="lamp_off.png" height="300" width="300" id = "lamp"/><br>
+<button id="switch" onclick="TurnOn_TurnOff_lamp()">TurnOff/TurnOn</button>
+<h4 id="result">Bóng đèn đang tắt</h4>
+<script>
+    class Button{
+        constructor(status) {
+            this.status = status ;
+        }
+        TurnOn_TurnOff(){
+            this.status = !this.status ;
+        }
+    }
+    class Lamp{
+        constructor(button) {
+            this.button= button ;
+        }
+        switch(){
+            if(this.button.status === true){
+                document.getElementById("lamp").src ="lamp_on.jpg";
+                document.getElementById("result").innerText ="Bóng đèn đang bật";
+                }else{
+                document.getElementById("lamp").src ="lamp_off.png";
+                document.getElementById("result").innerText ="Bóng đèn đang tắt";
+
+            }
+        }
+    }
+    let button1 = new Button(false);
+    let lamp =new Lamp(button1);
+    function TurnOn_TurnOff_lamp() {
+        button1.TurnOn_TurnOff();
+        lamp.switch();
+    }
+    </script>
 </body>
 </html>

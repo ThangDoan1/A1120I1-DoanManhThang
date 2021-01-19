@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title> Chuyển đổi giữa feet và meters</title>
 </head>
-<body>
-$END$
-</body>
+<body onload >
+<tr>
+<h3>Feet>Meters</h3>
+    <th><input type="text" id="feet" ></th>
+    <th><input type = "submit" value="Chuyển đổi" onclick="footToMeter()"></th>
+    <th><input type ="text" id="meters"></th>
+</tr>
+<tr>
+    <h3>Meters>Feet</h3>
+    <th><input type="text" id="meters2" ></th>
+    <th><input type = "submit" value="Chuyển đổi" onclick="meterToFoot()"></th>
+    <th><input type ="text" id="feet2"></th>
+</tr>
+</body >
+<script>
+    function footToMeter() {
+        let n=document.getElementById("feet").value;
+        let m;
+        m= 0.305*n;
+        console.log("" +m);
+        document.getElementById("meters").value="" +m ;
+    }
+    function meterToFoot() {
+        let m=document.getElementById("meters2").value;
+        let f =3.279*m;
+        console.log(""+f)
+        document.getElementById("feet2").value = "" +f ;
+    }
+</script>
 </html>

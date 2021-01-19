@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(doC) {
+            this.domC = doC;
+        }
+
+        doF() {
+            return this.domC * 1.8 + 32;
+        }
+        doK(){
+            return parseInt(this.domC + 273.15) ;
+        }
+    }
+    let a = parseInt(prompt("do C ="));
+    if (a < -273){
+        a = -273 ;
+    }
+    let doC1 =new Temperature(a);
+    alert(doC1.doF());
+    alert(doC1.doK());
+
+</script>
+</body>
+</html>
