@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ffsdfs
+<script>
+
+
+    // nhận dữ liệu tư page1 khi submit
+    let sPageURL = window.location.search.substring(1);
+    // document.write(sPageURL+'<br>');
+    let sURLVariables = sPageURL.split('&');
+    // document.write(sURLVariables);
+    let name =sURLVariables[0].split('=')[1];
+    let subject =sURLVariables[2].split('=')[1];
+    document.write(name)
+
+</script>
+</body>
+</html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #000000;"></canvas>
 <body>
 <script>
     let Circle = function(radius) {
@@ -17,7 +18,8 @@
         }
 
     };
-    let circle = new Circle(2);
+
+    let circle = new Circle(10);
     let radius = circle.getRadius(); // 2
 
     let area = circle.getArea(); // 12.566370614359172

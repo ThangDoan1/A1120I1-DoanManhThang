@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>câu1</title>
+</head>
+<body>
+<script>
+
+        let max =0 ;
+        let arr = [];
+        let total =0 ;
+        let list = parseInt(prompt("Có bao nhiêu điểm cần nhập "));
+        for (let i = 0; i < list; i++) {
+            arr[i] = parseInt(prompt('Nhập từng điểm '));
+            total += arr[i];
+            if (max < arr[i]) {
+                max = arr[i];
+            }
+
+    }
+    document.writeln('Giá trị lớn nhất là ' + max + '<br>');
+</script>
+</body>
+</html>

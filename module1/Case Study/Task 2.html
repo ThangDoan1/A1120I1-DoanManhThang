@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+</head>
+<body>
+<h2>Thông tin khách hàng</h2>
+<table>
+    <tr>
+        <h4> Họ và tên: <input name="name" type="text"></h4>
+        <h4>Số CMND: <input name="CMND" type=number"></h4>
+        <h4>Ngày tháng năm sinh <input name="birthday" type="date"></h4>
+        <h4>Địa chỉ: <input id = "address" name="address" type="text"></h4>
+        <h4>Loại Customer</h4>
+            <div id ="range">
+            <input value="r1" name="range" type="radio">Diamond
+            <input value="r2" name="range" type="radio">Platinum
+            <input value="r3" name="range" type="radio">Gold
+            <input value="r4" name="range" type="radio">Silver
+            <input value="r5" name="range" type="radio">Member
+            </div>
+        <h4>Loại Phòng thuê</h4>
+        <input name="room" type="radio">Vip
+        <input name="room" type="radio">Business
+        <input name="room" type="radio">Normal
+        <h4>Loại Dịch vụ</h4>
+        <select id="money">
+            <option name="service" value="Villa">Villa</option>
+            <option name="service" value="House">House</option>
+            <option name="service" value="Room">Room</option>
+        </select>
+        <!--                <input name="service" type="radio"value ="500" >Villa(500$/day)-->
+        <!--                <input name="service" type="radio"value="300">House(300$/day)-->
+        <!--                <input name="service" type="radio"value="100">Room(100$/day)-->
+        <h4>Số ngày thuê <input name="rentDates" type="number" id="rentDates"></h4>
+        <h4> Giảm giá <input type="number" id="voucher">%<br>
+            <button id="submit">Xác nhận
+
+    </tr>
+    <h3>Tổng số tiền của bạn là: <span id="total"></span></h3>
+</table>
+</body>
+<script>
+    document.getElementById("submit").addEventListener("click", Tinhtien);
+
+    function Tinhtien() {
+
+        // Mức giá theo loại Customer.
+        let ranges = document.getElementsByName("range");
+        let range ;
+        for(let a of ranges){
+            if (a.checked){
+                range=(a.value)
+            }
+        }
+        if (range === "r1") {
+            range = 15;
+        } else if (range === "r2") {
+            range = 10;
+        } else if (range === "r3") {
+            range = 5;
+        } else if (range === "r4") {
+            range = 2;
+        } else range = 0;
+
+        //  Mức giá theo địa chỉ
+        let address =document.getElementById("address").value;
+        if(address === "Đà Nẵng"){
+            address = 20;
+        }else if(address ==="Huế"){
+            address = 10;
+        }else if(address === "Quảng Nam"){
+            address = 5;
+        }else address = 0 ;
+
+        //Mức giá theo thời gian lưu trú
+        let days = document.getElementById("rentDates").value;
+        let discountDays ;
+        if (days >= 2 && days <= 4) {
+            discountDays = 10;
+        }else if(days >= 5 && days <= 7) {
+            discountDays = 20;
+        }else if(days > 7){
+            discountDays= 30 ;
+        }else discountDays = 0 ;
+
+        //Tính tống tiền phải trả
+        let total = 0 ;
+        let voucher = document.getElementById("voucher").value ;
+        let money =document.getElementById("money").value ;
+        if (money === "Villa"){
+            result = 500;
+        } else if (money==="House"){
+            result = 300;
+        } else {
+            result = 100 ;
+        }
+        document.getElementById('total').innerText=  + result*days*(1-voucher/100) - range - address - discountDays  +"$" ;
+    }
+</script>
+</html>

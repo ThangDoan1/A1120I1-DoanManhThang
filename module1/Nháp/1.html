@@ -17,6 +17,177 @@
     //     counter++;
     // }
     // console.log(sum);
+    // Hàm checkName();
+    function checkName() {
+        let tempName = "";
+        let resultTempName='';
+        let name = document.getElementById('name').value;
+        name = name.trim().toLowerCase();
+        // loại bỏ ký tự đặt biệt và khoảng trắng
+        for (let i = 0; i < name.length; i++) {
+            if (name.charAt(i) !== name.charAt(i).toUpperCase() || name.charAt(i) !== name.charAt(i).toLowerCase() || name.charAt(i) === ' ') {
+                if (name.charAt(i) === " " && name.charAt(i + 1) === " ") {
+                    continue;
+                }
+                tempName += name.charAt(i);
+            }
+        }
+        // viết hoa
+        for (let j=0;j<tempName.length;j++){
+            if (j===0 || tempName.charAt(j-1)===' '){
+                resultTempName += tempName.charAt(j).toUpperCase();
+                continue;
+            }
+            resultTempName+= tempName.charAt(j);
+        }
+        name = resultTempName;
+        document.getElementById('resultName').innerHTML=name;
+    }
+    //Hàm checkCMND();
+    function checkCmnd() {
+        let sttCmnd = 0;
+        let cmnd = document.getElementById('cmnd').value;
+        if (cmnd.length === 9) {
+            for (let i = 0; i < 9; i++) {
+                if (cmnd.charAt(i) >= 0)
+                    sttCmnd++;
+            }
+        }
+        if (sttCmnd === 9) {
+            document.getElementById('resultCmnd').innerHTML = cmnd;
+        } else document.getElementById('resultCmnd').innerHTML = "sai"
+    }
+
+    //Hàm checkDate();
+    function checkDate() {
+        let date = document.getElementById('date').value;
+        let tempDate = new Date(date);
+        if (date !== "") {
+            document.getElementById('resultDate').innerHTML = tempDate.getDate() + "/" + (tempDate.getMonth() + 1) + "/" + tempDate.getFullYear();
+        } else document.getElementById('resultDate').innerHTML = "sai"
+    }
+
+    //Hàm checkEmail();
+    function checkEmail() {
+        let stt = 0;
+        let sttAC = 0;
+        let sttCham = 0;
+        let email = document.getElementById('email').value;
+        for (let i = 0; i < email.length; i++) {
+            if (email.charAt(i + 1) === '@')
+                if (email.charAt(i + 2) !== '.')
+                    if (email.charAt(email.length - 4) === '.')
+                        if (email.charAt(email.length - 3) === 'c')
+                            if (email.charAt(email.length - 2) === 'o')
+                                if (email.charAt(email.length - 1) === 'm')
+                                    stt++;
+            if (email.charAt(i) === '@')
+                sttAC++;
+            if (email.charAt(i) === '.')
+                sttCham++;
+        }
+        if (stt === 1 && sttAC === 1 && sttCham === 1) {
+            document.getElementById('resultEmail').innerText = "ok"
+        } else document.getElementById('resultEmail').innerText = "Email không hợp lệ";
+    }
+
+    // Hàm checkFrom()
+    let from;
+    function checkFrom() {
+        from = document.getElementById('from').value;
+        if (from === "Đà Nẵng") {
+            from = 20;
+        } else if (from === "Huế") {
+            from = 10;
+        } else if (from === "Quảng Nam") {
+            from = 5;
+        } else {
+            from = 0;
+        }
+    }
+
+    // Hàm checkCustomer
+    let customer;
+    function checkCustomer() {
+        customer = document.getElementById('customer').value;
+        if (customer === "1") {
+            customer = 15;
+        } else if (customer === "2") {
+            customer = 10;
+        } else if (customer === "3") {
+            customer = 5
+        } else if (customer === "4") {
+            customer = 2;
+        } else customer = 0;
+    }
+
+    // Hàm checkVoucher();
+    let voucher;
+    function checkVoucher() {
+        voucher = document.getElementById('voucher').value;
+        voucher = 1 - voucher / 100;
+    }
+
+    // Hàm số người đi kèm
+    let people;
+    function checkPeople(){
+        people=document.getElementById('people').value;
+        if (people<0){
+            document.getElementById('checkPeople').innerHTML="sai"
+        }else if (people===""){
+            document.getElementById('checkPeople').innerHTML="Mục này không được bỏ trống"
+        }else document.getElementById('checkPeople').innerHTML="Số lượng người đi kèm: "+people;
+    }
+
+    // số ngày thuê + giảm giá theo số ngày thuê
+    let discountDays;
+    let days;
+    function checkDays() {
+        days = document.getElementById('days').value;
+        if (days >= 1) {
+            document.getElementById('checkDays').innerHTML='ok';
+            if (days >= 2 && days <= 4) {
+                discountDays = 10;
+            } else if (days >= 5 && days <= 7) {
+                discountDays = 20;
+            } else if (days > 7) {
+                discountDays = 30;
+            } else discountDays = 0;
+        }else document.getElementById('checkDays').innerHTML=days+" sai"
+    }
+
+    // Loại dịch vụ
+    let room;
+    function checkRoom(){
+        room = document.getElementById('money').value;
+        if (room === "valueVilla") {
+            room = 500;
+        } else if (room === "valueHouse") {
+            room = 300;
+        } else {
+            room = 100;
+        }
+
+    }
+
+    //bắt sự kiện --> RESULT
+    document.getElementById('submit').addEventListener('click', convert);
+    function convert() {
+        checkName();
+        checkCmnd();
+        checkDate();
+        checkEmail();
+        checkFrom();
+        checkCustomer();
+        checkVoucher();
+        checkPeople();
+        checkDays();
+        checkRoom();
+
+        // ------RESULT------
+        let result = room * days * voucher - from - discountDays - customer;
+        document.getElementById('result').innerHTML = 'Result: ' + result + "$";
+    }
 </script>
 </body>
 </html>

@@ -6,21 +6,28 @@
 </head>
 <body>
 <script>
-    // let fib = [0, 1];//Mảng
-    // for(let i=fib.length; i<19; i++) {
-    //     fib[i] = fib[i-2] + fib[i-1];
-    // }
-    // console.log(fib);
-  let a=0;
-  let b=1;
-  let c;
-  for(let i=0;i<20;i++) {
-      console.log(a);
-      c = a + b;
-      a = b;
-      b = c;
-
-  }
+    let number=parseInt(prompt("Nhập số n:"));
+    let fib = [0, 1];//Mảng
+    for(let i=fib.length; i<19; i++) {
+        fib[i] = fib[i-2] + fib[i-1];
+        if(number==fib){
+            alert("True")
+        }else {
+            alert("False")
+        }
+        break;
+    }
+    console.log(fib);
+  // let a=0;
+  // let b=1;
+  // let c;
+  // for(let i=0;i<20;i++) {
+  //     console.log(a);
+  //     c = a + b;
+  //     a = b;
+  //     b = c;
+  //
+  // }
 
 </script>
 </body>
